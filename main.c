@@ -4,15 +4,14 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(void) {
-	int input_int;
-	float input_float;
+	char c;
+	int i;
 	
-	printf("정수를 입력하시오.");
-	scanf("%d", &input_int);
+	printf("input a number :");
+	scanf("%c", &c);
 	
-	printf("소수를 입력하시오");
-	scanf("%f", &input_float);
+	i=c - '0';
+	printf("The input number is %i\n", i);
 	
-	printf("정수: %d, 소수: %f\n", input_int, input_float);
-	
-	return 0;}
+	return 0;
+}
